@@ -22,7 +22,7 @@ const AppRoutes = () => {
                 <Route path="/cart" element={<CartComponent />} ></Route>
                 <Route path="/checkout" element={<Checkout />} ></Route>
                 <Route path="/thankyou" element={<Thankyou />} ></Route>
-                <Route path="/*" element={<NotFound />} ></Route>
+                <Route path="*" element={<NotFound />} ></Route>
             </Routes>
         </BrowserRouter>
     )
