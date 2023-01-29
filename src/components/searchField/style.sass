@@ -1,0 +1,126 @@
+@use '../../sass/_variables'
+@import '../../sass/mixins'
+
+#search
+    display: flex
+    flex-direction: column
+    align-items: center
+    height: 600px
+    width: 100%
+    margin-top: 20vh
+
+    #searchField
+        display: flex
+        justify-content: space-between
+        align-items: center
+        background-color: #fff
+        width: 40vw
+        height: 20px
+        padding: 16px 26px 16px 26px
+        border-radius: 5px
+
+        div
+            width: 10%
+            display: flex
+            justify-content: right
+
+        input
+            width: 90%
+            border: none
+            background-color: transparent
+            style: none
+            text-decoration: none
+            font-family: 'Poppins-Regular'
+            color: variables.$gray-500-color
+            font-size: 16px
+
+        .fieldFocused
+            //border: 3px solid black
+            margin-top: -3px
+
+    .containerSearchResult
+        width: 80vw
+        height: 51vh
+        background-color: variables.$bg-color
+        border-radius: 5px
+        //border: 1px solid green
+        margin-top: 10px
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        header
+            width: 100%
+            display: flex
+            justify-content: right
+
+            button
+                background-color: transparent
+                width: 7vh
+                height: 3vh
+                border: none
+                margin-right: 5px
+                margin-top: 5px
+                color: #000
+                border-radius: 20px
+
+                &:hover
+                    background-color: #000
+                    color: #fff
+                    cursor: pointer
+
+        .searchResult
+            display: flex
+            width: 94%
+            height: 100%
+            .content
+                width: 80%
+                display: flex
+                justify-content: space-between
+                align-items: center
+                height: 100%
+
+                .notFound
+                    font-family: 'Poppins-Bold'
+                    font-size: 2rem
+
+                .boxGenre
+                    display: flex
+                    width: 62vh
+                    justify-content: space-between
+
+                .contentGenre
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    width: 28vh
+
+                    img
+                        width: 100%
+                        &:hover
+                            filter: brightness(50%)
+                            transition: all 0.3s
+                    p
+                        font-family: 'Poppins-Bold'
+                        font-size: 18px
+
+            .explore
+
+                width: 20%
+                display: flex
+                justify-content: center
+                align-items: center
+                height: 100%
+                //border: 1px solid pink
+
+                .explore__button
+                    @include filled-button
+                    height: 6vh
+                    width: 65%
+                    text-decoration: none
+                    font-family: "poppins-semibold"
+                    justify-content: center
+
+        .container-products
+            margin-left: 30px

@@ -1,0 +1,35 @@
+@use '../../sass/_variables'
+
+.cartItem__box
+    display: flex
+    justify-content: space-between
+    .cartItem__img__box
+        width: 30%
+        img
+            width: 100%
+    .cartItem__info__box
+        display: flex
+        flex-direction: column
+        width: 65%
+    .cartItem__title
+        font-family: "poppins-regular"
+        color: variables.$gray-500-color
+        font-size: 1.3rem
+    .cartItem__price
+        font-family: "poppins-regular"
+        color: #000
+        font-size: 1.4rem
+    .cartItem__size, .cartItem__amout
+        font-family: "Poppins-regular"
+        padding: .1rem
+        font-size: 1rem
+        width: 1.7rem
+        text-align: center
+    .cartItem__size
+        background-color: #000
+        color: #fff
+    .cartItem__amout
+        background-color: #fff
+        color: #000
+        border: 1px solid #000
+        padding: 0.05rem

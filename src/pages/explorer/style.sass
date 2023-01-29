@@ -1,0 +1,38 @@
+@use '../../sass/_variables'
+
+.simpleSearchContainer
+    position: sticky
+    top: 6vh
+    background-color: white
+    z-index: 999
+    border-bottom: 3vh solid white
+.categoriesContainer
+    display: flex
+    justify-content: center
+    margin-top: 50px
+
+    button
+        margin-right: 30px
+        background-color: black
+        border: none
+        width: 8rem
+        height: 2rem
+        color: white
+        font-family: 'Poppins-Regular'
+        font-size: 1rem
+        &:hover
+            cursor: pointer
+            color: variables.$gray-300-color
+
+.containerProducts
+    margin: 0 auto
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 50px
+    width: 80vw
+    place-content: center
+
+    .currentProduct
+        display: grid
+        align-items: center
+        justify-items: center

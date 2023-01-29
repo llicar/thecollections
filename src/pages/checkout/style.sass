@@ -1,0 +1,172 @@
+@use '../../sass/_variables'
+@import '../../sass/mixins'
+
+.checkout__container
+    width: 100%
+    display: flex
+    justify-content: conter
+    margin-top: 20vh
+
+//Checkout container and general box styles
+.checkout__box__container
+    display: flex
+    justify-content: space-around
+    .checkout__box
+        width: 22%
+        justify-content: center
+        padding: 1.5rem
+
+    .checkout-title
+        margin-bottom: 4vh
+        justify-content: center
+        display: flex
+        font-size: 1.7rem
+
+    h2
+        font-family: "poppins"
+//-----------------------
+
+//Products box styles
+.checkout-products
+    .checkout-item
+        width: 80%
+        margin-top: 1vh
+        p
+            font-size: 1.1rem
+
+    .change-bag
+        @include outline-button
+        font-family: "poppins-semibold"
+        font-size: 1rem
+        padding: .5rem
+        width: 50%
+        margin-top: 2vh
+        text-decoration: none
+
+//---------------------------
+
+//Indentification styles
+
+.indent-form
+    form
+        display: flex
+        flex-direction: column
+
+        label
+            margin-top: 2vh
+            font-family: "poppins"
+
+        input
+            border: none
+            background-color: variables.$gray-200-color
+            height: 3rem
+            padding-left: 1rem
+            font-family: "poppins-semibold"
+            font-size: 1rem
+
+            &:focus
+                border: 2px solid black
+
+        button
+            @include filled-button
+            justify-content: center
+            margin-top: 2vh
+            font-family: "poppins-semibold"
+            height: 3rem
+            font-size: 1rem
+//Payments
+.total-payment
+    margin-bottom: 3rem
+    .payment-prices
+        div
+            display: flex
+            justify-content: space-between
+
+            p
+                font-family: "poppins-SemiBold"
+                font-size: 1.2rem
+            p:nth-child(1)
+                color: variables.$gray-300-color
+                margin-bottom: .8rem
+    .total-card
+        display: flex
+        justify-content: center
+        margin-top: 1rem
+        p
+            background: #000
+            color: #fff
+            font-family: "poppins-semibold"
+            display: flex
+            justify-content: center
+            width: 100%
+            font-size: 1.5rem
+            padding: .1rem
+
+.payment-method
+    margin-bottom: 1rem
+    .methods-container
+        display: flex
+        flex-direction: column
+
+    .methdo-title
+        display: flex
+        justify-content: center
+        margin-bottom: 1rem
+    h3
+        font-family: "poppins-semibold"
+        font-size: 1.5rem
+        justify-content: center
+
+.custom-radio
+    display: flex
+    flex-direction: column
+    font-family: "poppins"
+    .option-label
+        display: inline-block
+        padding: 10px
+        border: 1px solid black
+        margin-bottom: .8rem
+        &:hover
+            cursor: pointer
+    .option-input
+        appearance: none
+        position: relative
+        top: -2px
+        left: -2px
+        &:checked + .option-label
+            background-color: black
+            color: white
+
+.finalize-order
+    display: flex
+    justify-content: center
+
+    .finalize-order-button
+        background: variables.$success-color
+        border: none
+        width: 100%
+        font-family: "poppins-semibold"
+        font-size: 1.5rem
+        border-radius: 3rem
+        padding: .5rem
+        color: #fff
+        display: flex
+        justify-content: center
+        text-decoration: none
+
+        &:hover
+            cursor: pointer
+            background-color: #39bb65
+
+.change-adress
+    display: flex
+    justify-content: left
+    margin-top: 1.5rem
+    align-items: center
+
+    button
+        @include outline-button
+        width: 60%
+        font-family: "poppins-semibold"
+        font-size: .9rem
+        padding: .5rem
