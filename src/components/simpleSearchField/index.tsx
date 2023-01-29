@@ -1,8 +1,6 @@
 import './style.sass'
 
-import { useState, ChangeEvent } from 'react';
-import { FiSearch } from 'react-icons/Fi'
-import { products } from '../../data/products';
+import { FiSearch } from 'react-icons/fi'
 import { useSearchParams } from 'react-router-dom';
 
 export function SimpleSearchField() {

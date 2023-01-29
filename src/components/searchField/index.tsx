@@ -1,7 +1,7 @@
 import './style.sass'
 
 import { FocusEvent, useState, ChangeEvent } from 'react';
-import { FiSearch } from 'react-icons/Fi'
+import { FiSearch } from 'react-icons/fi'
 import { useAppContext } from '../../context/searchIsVisible';
 import { BiRightArrowAlt } from 'react-icons/bi'
 import { VscChromeClose } from 'react-icons/vsc'
