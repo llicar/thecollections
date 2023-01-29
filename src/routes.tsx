@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import CartComponent from './pages/cart';
 import Checkout from './pages/checkout/checkout';
 import Thankyou from './pages/thankyou';
+import NotFound from './pages/notfound/index';
 
 const AppRoutes = () => {
 
@@ -21,6 +22,7 @@ const AppRoutes = () => {
                 <Route path="/cart" element={<CartComponent />} ></Route>
                 <Route path="/checkout" element={<Checkout />} ></Route>
                 <Route path="/thankyou" element={<Thankyou />} ></Route>
+                <Route path="/*" element={<NotFound />} ></Route>
             </Routes>
         </BrowserRouter>
     )
