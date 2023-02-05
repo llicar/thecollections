@@ -8,13 +8,11 @@ type CartItemTypes = {
 }
 
 function CartItem(props: CartItemTypes) {
-
-    const url = `/assets/images/products/${props.item.image}`
     return (
         <>
             <div className="cartItem__box">
                 <div className="cartItem__img__box">
-                    <img src={url} />
+                    <img src={props.item.imageImport} />
                 </div>
                 <div className="cartItem__info__box">
                     <p className="cartItem__title">

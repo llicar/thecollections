@@ -33,11 +33,6 @@ function Product() {
         setTotalPrice(Number(amout * price))
     }
 
-    function getImgUrl(urlPath: string) {
-        return new URL(urlPath, import.meta.url).href
-    }
-    const url = getImgUrl(`../../assets/images/products/${product?.image}`)
-
     function handleAddItemCart(product: ProductTypes) {
         const itemCart: ICartItem = {
             ...product,
@@ -48,6 +43,7 @@ function Product() {
         if (size) {
             try {
                 Cart.addItem(itemCart)
+                forceUpdate()
                 toast("Produto adicionado à sacola", { type: "success", theme: "light" });
             } catch (err: any) {
                 toast(err.message, { type: "error", theme: "light" });
@@ -85,7 +81,7 @@ function Product() {
                 <div className="container__product">
 
                     <div className="product__figure">
-                        <img src={url} />
+                        <img src={product?.imageImport} />
                         <p>
                             {product?.description}
                         </p>

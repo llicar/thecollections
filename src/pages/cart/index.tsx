@@ -58,7 +58,7 @@ function CartComponent() {
                         </div>
 
                         <div className="cart__info__container">
-                            <h2>Total <span style={{ fontFamily: "poppins-semibold", textDecoration: 'underline' }}>R${Cart.getTotal().toFixed(2)}</span></h2>
+                            <h2>Total da sacola: <span style={{ fontFamily: "poppins-semibold", textDecoration: 'underline' }}>R${Cart.getTotal().toFixed(2)}</span></h2>
                             <Link to="/checkout" className="cart__info--proceed">
                                 Prosseguir
                             </Link>
