@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom";
 import { ProductTypes } from "../../data/products";
-import { calçaCargo } from '../../utils/images'
 import "./style.sass";
-
-import jaquetaJeans from '../../assets/images/products/male/jaqueta jeans-m.jpg'
 
 type ProductDataType = {
     productData: ProductTypes
@@ -11,15 +8,13 @@ type ProductDataType = {
 
 export default function ProductCard({ productData }: ProductDataType) {
 
-    const baseUrl = `src/assets/images/products/${productData.image}`
-
     return (
         <>
             <div className="product-card-container">
-                <div className="product-card-image" style={{ backgroundImage: `url(${calçaCargo})` }}>
+                <div className="product-card-image" style={{ backgroundImage: `url(*)})` }}>
                     <Link className="filter" to={`/product/${productData.id}`}>
                     </Link>
-                    *<img src={calçaCargo}></img>
+                    <img src={productData.imageImport} />
                     <Link className="puchase__now__link" to={`/product/${productData.id}`}>
                         Comprar agora
                     </Link>

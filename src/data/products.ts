@@ -1,3 +1,6 @@
+import blazerOffWhite from '../assets/images/products/female/blazer-alongado-offwhite-f.jpg'
+
+
 export type ProductTypes = {
     id: number;
     name: string;
@@ -5,6 +8,7 @@ export type ProductTypes = {
     price: number;
     image: string;
     description: string;
+    imageImport: string
 }
 
 export const products: ProductTypes[] = [
@@ -14,6 +18,7 @@ export const products: ProductTypes[] = [
         "genre": "female",
         "price": 339.90,
         "image": "female/blazer-alongado-offwhite-f.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -22,6 +27,7 @@ export const products: ProductTypes[] = [
         "genre": "female",
         "price": 99.90,
         "image": "female/calça-jeans-larga-f.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -30,6 +36,7 @@ export const products: ProductTypes[] = [
         "genre": "female",
         "price": 79.90,
         "image": "female/calça-jean-lisa-f.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -38,6 +45,7 @@ export const products: ProductTypes[] = [
         "genre": "female",
         "price": 109.90,
         "image": "female/calça-jeans-azul-f.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -46,6 +54,7 @@ export const products: ProductTypes[] = [
         "genre": "female",
         "price": 87.90,
         "image": "female/calça-moletom-basica-f.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -54,6 +63,7 @@ export const products: ProductTypes[] = [
         "genre": "female",
         "price": 149.90,
         "image": "female/calça-pantalona-creme-f.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -62,6 +72,7 @@ export const products: ProductTypes[] = [
         "genre": "female",
         "price": 216.90,
         "image": "female/conunto-moletom-amarelo-f.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -70,6 +81,7 @@ export const products: ProductTypes[] = [
         "genre": "female",
         "price": 119.90,
         "image": "female/jaqueta-jeans-f.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -78,6 +90,7 @@ export const products: ProductTypes[] = [
         "genre": "female",
         "price": 199.90,
         "image": "female/macacao-azulmarinho-f.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -86,6 +99,7 @@ export const products: ProductTypes[] = [
         "genre": "female",
         "price": 189.90,
         "image": "female/macacao-cinza-f.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -94,6 +108,7 @@ export const products: ProductTypes[] = [
         "genre": "female",
         "price": 99.90,
         "image": "female/moletom-bordado-branco-f.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -102,6 +117,7 @@ export const products: ProductTypes[] = [
         "genre": "female",
         "price": 78.90,
         "image": "female/moletom-myrtle-beach-azul-f.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -110,6 +126,7 @@ export const products: ProductTypes[] = [
         "genre": "female",
         "price": 289.90,
         "image": "female/sobretudo-vermelho-f.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -118,6 +135,7 @@ export const products: ProductTypes[] = [
         "genre": "female",
         "price": 239.90,
         "image": "female/sobretudo-xadrez-f.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -126,6 +144,7 @@ export const products: ProductTypes[] = [
         "genre": "female",
         "price": 206.90,
         "image": "female/vestido-branco-f.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -134,6 +153,7 @@ export const products: ProductTypes[] = [
         "genre": "male",
         "price": 123.90,
         "image": "male/calça cargo preta-m.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -142,6 +162,7 @@ export const products: ProductTypes[] = [
         "genre": "male",
         "price": 99.90,
         "image": "male/calça estampa amarela-m.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -150,6 +171,7 @@ export const products: ProductTypes[] = [
         "genre": "male",
         "price": 109.90,
         "image": "male/calça jeans escuro lisa-m.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -158,6 +180,7 @@ export const products: ProductTypes[] = [
         "genre": "male",
         "price": 117.90,
         "image": "male/calça jeans rasgada-m.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -166,6 +189,7 @@ export const products: ProductTypes[] = [
         "genre": "male",
         "price": 119.90,
         "image": "male/calça jogger bege-m.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -174,6 +198,7 @@ export const products: ProductTypes[] = [
         "genre": "male",
         "price": 105.90,
         "image": "male/calça lisa preta-m.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -182,6 +207,7 @@ export const products: ProductTypes[] = [
         "genre": "male",
         "price": 99.90,
         "image": "male/camiseta basica manga longa-m.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -190,6 +216,7 @@ export const products: ProductTypes[] = [
         "genre": "male",
         "price": 299.90,
         "image": "male/jaqueta corta vento-m.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -198,6 +225,7 @@ export const products: ProductTypes[] = [
         "genre": "male",
         "price": 369.90,
         "image": "male/jaqueta de couro forrada-m.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -206,6 +234,7 @@ export const products: ProductTypes[] = [
         "genre": "male",
         "price": 309.90,
         "image": "male/jaqueta forrada preta-m.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -214,6 +243,7 @@ export const products: ProductTypes[] = [
         "genre": "male",
         "price": 149.90,
         "image": "male/jaqueta jeans destroyed-m.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -222,6 +252,7 @@ export const products: ProductTypes[] = [
         "genre": "male",
         "price": 120.90,
         "image": "male/jaqueta jeans-m.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -230,6 +261,7 @@ export const products: ProductTypes[] = [
         "genre": "male",
         "price": 314.90,
         "image": "male/jaqueta-couro-preta-m.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -238,6 +270,7 @@ export const products: ProductTypes[] = [
         "genre": "male",
         "price": 129.90,
         "image": "male/moletom listrado vermelho-m.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
@@ -246,6 +279,7 @@ export const products: ProductTypes[] = [
         "genre": "male",
         "price": 149.90,
         "image": "male/moletom verde liso-m.jpg",
+        "imageImport": blazerOffWhite,
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     }
 ]
