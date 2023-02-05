@@ -38,9 +38,6 @@ export function SearchField() {
         field: searchIsVisible ? "fieldFocused" : "",
         input: searchIsVisible ? "inputFocused" : "",
     }
-    function getImgUrl(urlPath: string) {
-        return new URL(urlPath, import.meta.url).href
-    }
 
     const handlerFocus = (e: FocusEvent<HTMLInputElement>) => {
         setSearchIsVisible(true)

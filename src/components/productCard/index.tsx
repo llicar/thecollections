@@ -8,21 +8,17 @@ type ProductDataType = {
 
 export default function ProductCard({ productData }: ProductDataType) {
 
-    function getImgUrl(urlPath: string) {
-        return new URL(urlPath, import.meta.url).href
-    }
-    const url = getImgUrl(`../../assets/images/products/${productData.image}`)
+    const baseUrl = `src/assets/images/products/${productData.image}`
 
     return (
         <>
             <div className="product-card-container">
-                <div className="product-card-image" style={{ backgroundImage: `url(${url})` }}>
+                <div className="product-card-image" style={{ backgroundImage: `url(${baseUrl})` }}>
                     <Link className="filter" to={`/product/${productData.id}`}>
                     </Link>
                     <Link className="puchase__now__link" to={`/product/${productData.id}`}>
                         Comprar agora
                     </Link>
-
                 </div>
                 <div className="product-card-name">
                     <p>{productData.name}</p>

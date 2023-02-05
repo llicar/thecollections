@@ -9,13 +9,8 @@ type CartItemTypes = {
 
 function CartItem(props: CartItemTypes) {
 
-    function getImgUrl(urlPath: string) {
-        return new URL(urlPath, import.meta.url).href
-    }
-    const url = getImgUrl(`../../assets/images/products/${props.item.image}`)
-
+    const url = `src/assets/images/products/${props.item.image}`
     return (
-
         <>
             <div className="cartItem__box">
                 <div className="cartItem__img__box">
