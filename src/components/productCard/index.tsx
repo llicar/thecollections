@@ -2,20 +2,23 @@ import { Link } from "react-router-dom";
 import { ProductTypes } from "../../data/products";
 import "./style.sass";
 
+import jaquetaJeans from '../../assets/images/products/male/jaqueta jeans-m.jpg'
+
 type ProductDataType = {
     productData: ProductTypes
 }
 
 export default function ProductCard({ productData }: ProductDataType) {
 
-    const baseUrl = `/assets/images/products/${productData.image}`
+    const baseUrl = `src/assets/images/products/${productData.image}`
 
     return (
         <>
             <div className="product-card-container">
-                <div className="product-card-image" style={{ backgroundImage: `url(${baseUrl})` }}>
+                <div className="product-card-image" style={{ backgroundImage: `url(${jaquetaJeans})` }}>
                     <Link className="filter" to={`/product/${productData.id}`}>
                     </Link>
+                    <img src={baseUrl}></img>
                     <Link className="puchase__now__link" to={`/product/${productData.id}`}>
                         Comprar agora
                     </Link>
