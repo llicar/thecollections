@@ -4,5 +4,11 @@
             "src": ".*",
             "dest": "/404"
         }
+    ],
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/"
+        }
     ]
 }
