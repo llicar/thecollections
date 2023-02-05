@@ -1,10 +1,4 @@
 {
-    "routes": [
-        {
-            "src": ".*",
-            "dest": "/404"
-        }
-    ],
     "rewrites": [
         {
             "source": "/(.*)",
