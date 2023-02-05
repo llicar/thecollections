@@ -8,7 +8,7 @@ type ProductDataType = {
 
 export default function ProductCard({ productData }: ProductDataType) {
 
-    const baseUrl = `src/assets/images/products/${productData.image}`
+    const baseUrl = `/assets/images/products/${productData.image}`
 
     return (
         <>

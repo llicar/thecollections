@@ -9,7 +9,7 @@ type CartItemTypes = {
 
 function CartItem(props: CartItemTypes) {
 
-    const url = `src/assets/images/products/${props.item.image}`
+    const url = `/assets/images/products/${props.item.image}`
     return (
         <>
             <div className="cartItem__box">
