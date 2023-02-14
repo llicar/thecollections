@@ -11,12 +11,12 @@ export default function ProductCard({ productData }: ProductDataType) {
     return (
         <>
             <div className="product-card-container">
-                <div className="product-card-image" style={{ backgroundImage: `url(${productData.imageImport})` }}>
-                    <Link className="filter" to={`/product/${productData.id}`}>
+                <div className="product-card-image">
+                    <Link className="overlay" to={`/product/${productData.id}`}>
+                        <p>Comprar agora</p>
                     </Link>
-                    <Link className="puchase__now__link" to={`/product/${productData.id}`}>
-                        Comprar agora
-                    </Link>
+                    <img src={productData.imageImport} alt="" />
+
                 </div>
                 <div className="product-card-name">
                     <p>{productData.name}</p>
